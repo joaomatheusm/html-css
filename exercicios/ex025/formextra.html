@@ -6,29 +6,28 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form action="cadastro.php">
-        
+    <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Dados do Aluno</legend>
             <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" required>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
             </p>
             <p>
                 <label for="isobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="isobrenome" required>
+                <input type="text" name="sobrenome" id="isobrenome" required autocomplete="family-name">
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" placeholder="(XX)XXXXX-XXXX" required>
+                <input type="tel" name="tel" id="itel" placeholder="(XX)XXXXX-XXXX" required autocomplete="tel">
             </p>
             <p>
                 <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail" required>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
             </p>
             <p>
                 <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required>
+                <input type="password" name="senha" id="isenha" required autocomplete="current-password">
             </p>
             <p>
                 <label for="imedia">Média</label>
@@ -38,9 +37,23 @@
                 <label for="idata">Data da Prova</label>
                 <input type="date" name="data" id="idata" required>
             </p>
+            <p>
+                <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            </p>
+            
+        </fieldset>
+        <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <p>
+                    <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                    <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+                    <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+                    <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+                </p>
+        </fieldset>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </fieldset>
     </form>
 </body>
 </html>
