@@ -92,8 +92,9 @@
             <input type="color" name="corbas" id="icorbas">
         </fieldset>
             <p>
-                <label for="isat">Nível de satisfação: </label>
-                <input type="range" name="sat" id="isat" min="1" max="5">
+                <label for="inum">Nível de Satisfação:</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
             </p>
             <p>
                 <label for="imsg">Mensagem:</label> <br>
