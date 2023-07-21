@@ -12,32 +12,34 @@
             <legend>Dados do Aluno</legend>
             <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome">
+                <input type="text" name="nome" id="inome" required>
             </p>
             <p>
                 <label for="isobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="isobrenome">
+                <input type="text" name="sobrenome" id="isobrenome" required>
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" placeholder="(XX)XXXXX-XXXX">
+                <input type="tel" name="tel" id="itel" placeholder="(XX)XXXXX-XXXX" required>
             </p>
             <p>
                 <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail">
+                <input type="email" name="email" id="iemail" required>
             </p>
             <p>
                 <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha">
+                <input type="password" name="senha" id="isenha" required>
             </p>
             <p>
                 <label for="imedia">Média</label>
-                <input type="number" name="media" id="imedia" step="0.1" min="0" max="10">
+                <input type="number" name="media" id="imedia" step="0.1" min="0" max="10" required>
             </p>
             <p>
                 <label for="idata">Data da Prova</label>
-                <input type="date" name="data" id="idata">
+                <input type="date" name="data" id="idata" required>
             </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </fieldset>
     </form>
 </body>
